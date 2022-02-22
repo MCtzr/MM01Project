@@ -10,7 +10,7 @@
 
 **contents :**
 
->> index.html :
+> index.html :
   
   Home page of this website, contains a small description of the saga, a parallax effect, a resume of the moovies prices and an original footer.
 
