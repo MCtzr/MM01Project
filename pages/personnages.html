@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personnages</title>
+  <meta name="author" content="Matéo CONDAT">
+  <meta name="keywords" content="Dragons, Dessin animé, DreamWorks, MM01">
+  <meta name="description" content="Site réalisé sur le thème des dessins animés Dragons dans le cadre de l'UE MM01 à l'UTT">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Initialise le responsive des pages-->
+  <link rel="shortcut icon" type=image/ico href="../favicon/icon.ico"> <!--Favicon de la page-->
+</head>
+
+<body>
+
+  <header>
+  
+    <br>
+    <!--Images du header-->
+    <img src="../img/Dragonprincipal.png" alt="Beau dragon" title="Dragon" class=dragonhead2 position=absolute>
+    <a href="../index.html"><img class=logo src="../img/dragons.png" alt="Beau logo" title="Dragons"></a>
+  
+    
+    <br><br>
+  
+    <!--Menu de navigation-->
+    <nav class=topnav id="myTopnav">
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()" float=right><img src="../img/burger.png" alt="Beau burger" title="menu burger" width=50%></a> <!--Menu burger apparaissant sur les versions tablette et mobile-->
+  
+      <div class=menuresp>
+      <div class="dropdown">
+        <img src="../img/Dragonprincipal.png" alt="Beau dragon" title="Dragon" class=dragonhead position=absolute>
+          <a href="javascript:void(0)" class="dropbtn">La Saga</a>
+          <div class="dropdown-content">
+            <a href="../pages/origines.html">Les origines</a>
+            <a href="../pages/timeline.html">Timeline</a>
+          </div>
+      </div>
+  
+      <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">histoire des films</a>
+          <div class="dropdown-content">
+            <a href="../pages/resume.html">Résumé</a>
+            <a href="../pages/personnages.html">Personnages</a>
+          </div>
+      </div>
+  
+      <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Contenu annexe</a>
+          <div class="dropdown-content">
+            <a href="../pages/quizz.html">Quizz</a>
+            <a href="../pages/galerie.html">Galerie</a>
+            <a href="../pages/musiques.html">Musiques</a>
+          </div>
+      </div>
+  
+      <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">A propos</a>
+          <div class="dropdown-content">
+            <a href="../pages/commentaires.html">Commentaires</a>
+            <a href="../pages/contact.html">Contact</a>
+          </div>
+      </div>
+      </div>
+      
+  
+      </nav>
+  
+      <!--Script utilisé pour le responsif du menu-->
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+          x.className += " responsive";
+          } else {
+          x.className = "topnav";
+          }
+        }
+      </script>
+  
+  </header>
+
+  <section>
+    <div class='block debut'>
+
+    <h2 class="font">Les personnages</h2> <!--Titre de la page-->
+  
+    </div>
+      <hr>
+    <div class='block fin'>
+
+      <div class='ensemble'> <!--Tab des personnages-->
+      <div class=tabresp> <!--Cases des personnages-->
+        <button class="tablink" onclick="openCity('Harold', this, '#333333')" id="defaultOpen">Harold</button>
+        <button class="tablink" onclick="openCity('Krokmou', this, '#333333')">Krokmou</button>
+        <button class="tablink" onclick="openCity('Astrid', this, '#333333')">Astrid</button>
+        <button class="tablink" onclick="openCity('Stoïck', this, '#333333')">Stoïck</button>
+        <button class="tablink" onclick="openCity('Rustik', this, '#333333')">Rustik</button>
+        <button class="tablink" onclick="openCity('Varek', this, '#333333')">Varek</button>
+        <button class="tablink" onclick="openCity('Kranedur', this, '#333333')">Kranedur</button>
+        <button class="tablink" onclick="openCity('Kognedur', this, '#333333')">Kognedur</button>
+      </div>
+
+      <div id="Harold" class="tabcontent"> <!--Description des personnages-->
+        <h2 class=font>Harold Horrib' Haddock III</h2><br>
+        <p>Au départ forgeron avec Gueulfor, Harold n'a jamais cessé de vouloir devenir un viking. En voulant montrer ses preuves, il captura puis fit la rencontre de Krokmou, un dragon de la classe des furies nocturnes avec lequel il se lie d'amitié. <br>Grâce à son entrainement avec Krokmou pour devenir un Viking, Harold devient très vite populaire dans son village, sauf auprès de Astrid pour laquelle il a toujours eu un faible.</p>
+        <a href='https://i.pinimg.com/originals/a1/ab/74/a1ab74aaf8aa3d5f47f0a614ce1b4a58.gif'><img src='https://i.pinimg.com/originals/a1/ab/74/a1ab74aaf8aa3d5f47f0a614ce1b4a58.gif' alt=Harroldgif Titre=Harold class=imagepetite></a>
+      </div>
+
+      <div id="Krokmou" class="tabcontent"> <!--Description des personnages-->
+        <h2 class=font>Krokmou</h2><br>
+        <p>Krokmou est un furie nocturne. Cette espèce de dragons est la seule que les vikings du village Berk n'ont jamais vu. <br>Krokmou fut capturé et blessé par la nouvelle armée formée par Harold. Celui-ci n'ayant pas la volonté d'achever le dragon, il le libèrera et lui permit de voler à nouveau en lui fabriquant un morceau d'aile. <br>C'est avec Harold que Krokmou se liera d'amitié, et surmonta de nombreux défis pour protéger leur village.</p> 
+        <a href='https://i.pinimg.com/originals/be/d3/3d/bed33db0113943ae02663bba1df0403f.gif'><img src='https://i.pinimg.com/originals/be/d3/3d/bed33db0113943ae02663bba1df0403f.gif' alt=Krokmougif Titre=Krokmou class=imagepetite></a>
+      </div>
+
+      <div id= "Astrid" class="tabcontent"> <!--Description des personnages-->
+        <h2 class=font>Astrid Hofferson</h2><br>
+        <p>Astrid est une jeune apprentie viking du village. Intelligente, courageuse et forte, son rêve est de devenir un redoutable viking et d'avoir l'honneur de tuer un dragon devant tout le village de Berk. Sa volonté et son acharnement fait d'elle la plus forte de la bande d'apprentis. <br>Cependant, à l'arrivé de Harold et de ses connaissances sur les dragons, celui-ci devint le centre d'attention, et elle en devint très jalouse. La jeune viking adopta un dragon qu'elle nomma Tempête.</p>
+        <a href='https://data.whicdn.com/images/221631634/original.gif'><img src='https://data.whicdn.com/images/221631634/original.gif' alt=Stoïckgif Titre=Stoïck class=imagepetite></a>
+      </div>
+
+      <div id="Stoïck" class="tabcontent"> <!--Description des personnages-->
+        <h2 class=font>Stoïck la brute</h2><br>
+        <p>Stoïck la brute est le père de Harold. Il est aussi et surtout le chef du village de Berk. Grand et valeureux viking du village, il est le total opposé de son fils, Harold, considéré comme un déshonneur. La relation de Stoïck avec Harold a toujours été compliquée en conséquence. Lorsque Harold révéla l'existence de Krokmou et refusa de tuer un dragon, Stoïck fut fortement déçu par son fils. Cependant il se rendit vite compte de son erreur et apprit lui aussi à apprécier les dragons, au lieu de les combattre.</var></p>
+        <a href='https://i.pinimg.com/originals/8c/e2/f8/8ce2f83645e528edc674d479b7393668.gif'><img src='https://i.pinimg.com/originals/8c/e2/f8/8ce2f83645e528edc674d479b7393668.gif' alt=Stoïckgif Titre=Stoïck class=imagepetite></a>
+      </div>
+
+      <div id="Rustik" class="tabcontent"> <!--Description des personnages-->
+        <h2 class=font>Rustik</h2><br>
+        <p>Rustik est un jeune viking. Très fort, courageux et n'étant pas du genre à hésiter en combat, Rustik pourrait faire un excellent viking, si celui-ci réfléchissait un peu plus. Son grand rêve est d'apprendre à devenir un grand chasseur de dragons... et à séduire Astrid. Lorsque Rustik apprit à apprécier les dragons comme Harold l'a fait avec Krokmou, il adopta une Terreur Terrible qu'il nomma Chochefer.</p>
+        <a href='https://media1.giphy.com/media/TIixDzgRPpK1JmghP2/giphy.gif'><img src='https://media1.giphy.com/media/TIixDzgRPpK1JmghP2/giphy.gif' alt=Stoïckgif Titre=Stoïck class=imagepetite></a>
+      </div>
+  
+      <div id="Varek" class="tabcontent"> <!--Description des personnages-->
+        <h2 class=font>Varek</h2><br>
+        <p>Varek fait partie de la bande de jeunes vikings de Berk. Celui est très studieux, en effet il connait tout sur les dragons et leurs caractéristiques grâce aux nombreux livres qu'il a lu sur le sujet. Cependant, il se rendit compte que le savoir ne suffisait pas pour devenir un valeureux viking, et manque encore de courage lorsqu'il est en combat. Lorsqu'il apprit à apprécier les dragons, Varek adopta un Gronk qu'il nomma Bouledogre.</p>
+        <a href='https://pa1.narvii.com/6810/24dad55a94fc9c0645b96708c8a8aabc4c5ffc75_00.gif'><img src='https://pa1.narvii.com/6810/24dad55a94fc9c0645b96708c8a8aabc4c5ffc75_00.gif' alt=Varekgif Titre=Varek class=imagepetite></a>
+      </div>
+
+      <div id="Kranedur" class="tabcontent"> <!--Description des personnages-->
+        <h2 class=font>Kranedur</h2><br>
+        <p>Kranedur est un jeune viking de Berk. Il est aussi le frère jumeau de Kognedur. Ces deux-là passent leur temps à de chamailler, ce qui les déconcentrent beaucoup en combat. Cependant les deux jeunes vikings s'aiment beaucoup au fond et ne se laisseront jamais tomber.</p>
+        <a href='https://2img.net/h/38.media.tumblr.com/e9e35c8930339a5b1b0b271b22b5bff7/tumblr_nrgdy1mwmJ1rgx1dyo1_250.gif'><img src='https://2img.net/h/38.media.tumblr.com/e9e35c8930339a5b1b0b271b22b5bff7/tumblr_nrgdy1mwmJ1rgx1dyo1_250.gif' alt=Kranedurgif Titre=kranedur class=imagepetite></a>
+      </div>
+  
+      <div id="Kognedur" class="tabcontent"> <!--Description des personnages-->
+        <h2 class=font>Kognedur</h2><br>
+        <p>Kognedur est une jeune viking de Berk. Il est aussi le frère jumeau de Kognedur. Ces deux-là passent leur temps à de chamailler, ce qui les déconcentrent beaucoup en combat. Cependant les deux jeunes vikings s'aiment beaucoup au fond et ne se laisseront jamais tomber.</p>
+        <a href='https://33.media.tumblr.com/tumblr_m2uo72jp1I1r8xjguo3_r2_250.gif'><img src='https://33.media.tumblr.com/tumblr_m2uo72jp1I1r8xjguo3_r2_250.gif' alt=Kognedurgif Titre=kognedur class=imagepetite></a>
+      </div>
+      </div>
+
+     <!--Script permettant de passer d'un personnage à un autre-->
+    <script>
+      function openCity(cityName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(cityName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      
+      }
+      document.getElementById("defaultOpen").click();
+    </script>
+
+    <br><br><br>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <ul> <!--Menu utilisé dans le footer pour les liens vers commentaires et contact-->
+      <a href="../pages/commentaires.html">
+        <li>
+          Commentaires
+        </li>
+      </a>
+        <a href="../pages/contact.html"><li>
+          Contact
+        </li>
+      </a>
+    </ul>
+  </footer>
+
+</body>
+</html>

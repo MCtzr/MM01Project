@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quizz</title>
+  <meta name="author" content="Matéo CONDAT">
+  <meta name="keywords" content="Dragons, Dessin animé, DreamWorks, MM01">
+  <meta name="description" content="Site réalisé sur le thème des dessins animés Dragons dans le cadre de l'UE MM01 à l'UTT">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Initialise le responsive des pages-->
+  <link rel="shortcut icon" type=image/ico href="../favicon/icon.ico"> <!--Favicon de la page-->
+</head>
+
+<body>
+
+  <header>
+  
+    <br>
+    <!--Images du header-->
+    <img src="../img/Dragonprincipal.png" alt="Beau dragon" title="Dragon" class=dragonhead2 position=absolute>
+    <a href="../index.html"><img class=logo src="../img/dragons.png" alt="Beau logo" title="Dragons"></a>
+  
+    
+    <br><br>
+  
+    <!--Menu de navigation-->
+    <nav class=topnav id="myTopnav">
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()" float=right><img src="../img/burger.png" alt="Beau burger" title="menu burger" width=50%></a> <!--Menu burger apparaissant sur les versions tablette et mobile-->
+  
+      <div class=menuresp>
+      <div class="dropdown">
+        <img src="../img/Dragonprincipal.png" alt="Beau dragon" title="Dragon" class=dragonhead position=absolute>
+          <a href="javascript:void(0)" class="dropbtn">La Saga</a>
+          <div class="dropdown-content">
+            <a href="../pages/origines.html">Les origines</a>
+            <a href="../pages/timeline.html">Timeline</a>
+          </div>
+      </div>
+  
+      <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">histoire des films</a>
+          <div class="dropdown-content">
+            <a href="../pages/resume.html">Résumé</a>
+            <a href="../pages/personnages.html">Personnages</a>
+          </div>
+      </div>
+  
+      <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Contenu annexe</a>
+          <div class="dropdown-content">
+            <a href="../pages/quizz.html">Quizz</a>
+            <a href="../pages/galerie.html">Galerie</a>
+            <a href="../pages/musiques.html">Musiques</a>
+          </div>
+      </div>
+  
+      <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">A propos</a>
+          <div class="dropdown-content">
+            <a href="../pages/commentaires.html">Commentaires</a>
+            <a href="../pages/contact.html">Contact</a>
+          </div>
+      </div>
+      </div>
+      
+  
+    </nav>
+  
+    <!--Script utilisé pour le responsif du menu-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+      }
+    </script>
+  
+  </header>
+
+  <section>
+    <div class='block debut'>
+      <h2 class=font>Quizz</h2> <!--Titre de la page-->
+    </div>
+
+    <hr>
+
+    <div class='block fin'>
+      <form id="form1">
+
+      <h3 class=font2>Quel est le nom donné au dragon de Harold ?</h3> <!--Question 1-->
+      <br><br><br>
+      <p>
+      
+      <div class=reponse><label for="var_string"><p><input type="radio" name="variable" value="0" id="var_string" />Berk.</label></p></div>
+      <div class=reponse><label for="var_join"><p><input type="radio" name="variable" value="10" id="var_join" />Furie Nocturne.</label></p></div>
+      <div class=reponse><label for="var_info"><p><input type="radio" name="variable" value="25" id="var_info" />Krokmou.</label></p></div>
+      <div class=reponse><label for="var_condition"><p><input type="radio" name="variable" value="0" id="var_condition"/>Je ne sais pas.</label></p></div>
+      </p>
+      <br><br><br><hr><br>
+
+      <h3 class=font2>Dans le premier film, quelle partie du corps du dragon principal a été blessée par Harold ?</h3> <!--Question 2-->
+      <br><br><br>
+      <p>
+      <div class=reponse><label for="sub_string"><p><input type="radio" name="sub" value="25" id="sub_string"/>La queue.</label></p></div>
+      <div class=reponse><label for="sub_join"><p><input type="radio" name="sub" value="0" id="sub_join"/>La tête.</label></p></div>
+      <div class=reponse><label for="sub_info"><p><input type="radio" name="sub" value="0" id="sub_info" />Une aile.</label></p></div>
+      <div class=reponse><label for="sub_condition"><p><input type="radio" name="sub" value="0" id="sub_condition"/>Je ne sais pas.</label></p></div>
+      <br><br><br><hr><br>
+      </p>
+
+      <h3 class=font2>Quel est la classe du dragon de Astrid ?</h3> <!--Question 3-->
+      <br><br><br>
+      <p>
+      <div class=reponse><label for="cat_string"><p><input type="radio" name="con" value="0" id="cat_string" />Furie nocturne</label></p></div>
+      <div class=reponse><label for="cat_join"><p><input type="radio" name="con" value="0" id="cat_join" />Gronk.</label></p></div>
+      <div class=reponse><label for="cat_info"><p><input type="radio" name="con" value="25" id="cat_info" />Vipère.</label></p></div>
+      <div class=reponse><label for="cat_condition"><p><input type="radio" name="con" value="0" id="cat_condition" />Je ne sais pas.</label></p></div>
+      <br><br><br><hr><br>
+      </p>
+
+      <h3 class=font2>Que reproche le plus le chef du village à son fils ?</h3> <!--Question 4-->
+      <br><br><br>
+      <p>
+      <div class=reponse><label for="if_string"><p><input type="radio" name="ifstate" value="0" id="if_string" />Sa perfection.</label></p></div>
+      <div class=reponse><label for="if_join"><p><input type="radio" name="ifstate" value="25" id="if_join" />Sa trouillardise.</label></p></div>
+      <div class=reponse><label for="if_info"><p><input type="radio" name="ifstate" value="0" id="if_info" />Sa popularité.</label></p></div>
+      <div class=reponse><label for="if_condition"><p><input type="radio" name="ifstate"  value="0" id="if_condition" />Je ne sais pas.</label></p></div>
+      </p>
+      <br><br><br><hr><br>
+
+      <center><button type="submit" value="Submit" class="bouton-css"><p>valider</p></button></center> <!--Bouton pour valider les réponses-->
+      
+      <br><br><br><br>
+
+      </form>
+
+      <!--Script utilisé pour faire fonctionner le résultat du Quizz-->
+      <script>
+        document.getElementById("form1").onsubmit=function() {
+          variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+          sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+          con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+          ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+                 
+                 
+          result = variable + sub + con + ifstate;
+                 
+          document.getElementById("grade").innerHTML = result;
+                 
+          
+          
+          return false;
+        }
+
+      </script> 
+  
+      <br>    
+
+      <p>Your grade is: <span id="grade">__</span></p> <!--Une note sur 100-->
+      <p id="grade2">/100</p>
+    
+    </div>
+  </section>
+
+  <footer>
+    <ul> <!--Menu utilisé dans le footer pour les liens vers commentaires et contact-->
+      <a href="../pages/commentaires.html">
+        <li>
+          Commentaires
+        </li>
+      </a>
+        <a href="../pages/contact.html"><li>
+          Contact
+        </li>
+      </a>
+    </ul>
+  </footer>
+
+</body>
+</html>

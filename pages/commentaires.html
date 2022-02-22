@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Commentaires</title>
+  <meta name="author" content="Matéo CONDAT">
+  <meta name="keywords" content="Dragons, Dessin animé, DreamWorks, MM01">
+  <meta name="description" content="Site réalisé sur le thème des dessins animés Dragons dans le cadre de l'UE MM01 à l'UTT">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Initialise le responsive des pages-->
+  <link rel="shortcut icon" type=image/ico href="../favicon/icon.ico"> <!--Favicon de la page-->
+</head>
+
+<body>
+
+<header>
+  
+  <br>
+  <!--Images du header-->
+  <img src="../img/Dragonprincipal.png" alt="Beau dragon" title="Dragon" class=dragonhead2 position=absolute>
+  <a href="../index.html"><img class=logo src="../img/dragons.png" alt="Beau logo" title="Dragons"></a>
+
+  
+  <br><br>
+
+  <!--Menu de navigation-->
+  <nav class=topnav id="myTopnav">
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()" float=right><img src="../img/burger.png" alt="Beau burger" title="menu burger" width=50%></a> <!--Menu burger apparaissant sur les versions tablette et mobile-->
+
+    <div class=menuresp>
+
+      <div class="dropdown">
+        <img src="../img/Dragonprincipal.png" alt="Beau dragon" title="Dragon" class=dragonhead position=absolute>
+          <a href="javascript:void(0)" class="dropbtn">La Saga</a>
+          <div class="dropdown-content">
+            <a href="../pages/origines.html">Les origines</a>
+            <a href="../pages/timeline.html">Timeline</a>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">histoire des films</a>
+          <div class="dropdown-content">
+            <a href="../pages/resume.html">Résumé</a>
+            <a href="../pages/personnages.html">Personnages</a>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Contenu annexe</a>
+          <div class="dropdown-content">
+            <a href="../pages/quizz.html">Quizz</a>
+            <a href="../pages/galerie.html">Galerie</a>
+            <a href="../pages/musiques.html">Musiques</a>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">A propos</a>
+          <div class="dropdown-content">
+            <a href="../pages/commentaires.html">Commentaires</a>
+            <a href="../pages/contact.html">Contact</a>
+          </div>
+      </div>
+    </div>
+    
+
+  </nav>
+
+  <!--Script utilisé pour le responsif du menu-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+      x.className += " responsive";
+      } else {
+      x.className = "topnav";
+      }
+    }
+  </script>
+
+</header>
+
+<section>
+  <div class='block debut'>
+    <h2 class="font">Commentaires</h2> <!--Titre de la page-->
+  </div>
+
+  <hr>
+
+  <div class='block fin'>
+    <div class=marge>
+      <form action="mailto:mateo.condat@utt.fr" method="post">  <!--Formulaire envoyé par mail à mateo.condat@utt.fr-->
+
+        <label for="nom"><p>Votre nom complet :</p></label> <!--Nom à entrer-->
+        <br>
+        <input type="text" size="20" maxlenght="25" id="nom" name="nom" placeholder="NOM Prénom" required>
+        <br><br>
+  
+        <label for="mail"><p>Adresse e-mail :</p></label> <!--adresse e-mail à entrer-->
+        <br>
+        <input type="email" id="mail" name="mail" placeholder="prénom.nom@utt.fr" required>
+        <br><br>
+  
+        <label for="age"><p>Age :</p></label> <!--Age à entrer-->
+        <br>
+        <input type="number" id="age" name="age" value="20" min="1" max="120" required>
+        <br><br>
+  
+        <p>Sexe :</p><br> <!--Sexe à entrer-->
+  
+        <input type="radio" name="sexe" value="homme" id="homme" required>
+        <label for="homme"><p>Homme</p></label><br>
+        <input type="radio" name="sexe" value="femme" id="femme" required>
+        <label for="femme"><p>Femme</p></label>
+        <br><br>
+  
+        <label for="statut"><p>Vous êtes ?</p></label> <!--activité professionnelle à entrer-->
+        <br>
+  
+        <select name="statut" id="statut" required>
+          <option value="etudiant"><p>Étudiant</p></option>
+          <option value="professeur"><p>Professeur</p></option>
+          <option value="autre"><p>Autre</p></option>
+        </select>
+        <br><br>
+
+        <label for="comment"><p>Votre message :</p></label> <!--Message à entrer-->
+        <br>
+        <textarea type="text" id="comment" name="comment" rows="7" cols="35" required></textarea>
+        <br>
+        <br>
+        <button type="submit" value="Envoyer" class=bouton-css><p>Envoyer</p></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <ul> <!--Menu utilisé dans le footer pour les liens vers commentaires et contact-->
+    <a href="../pages/commentaires.html">
+      <li>
+        Commentaires
+      </li>
+    </a>
+      <a href="../pages/contact.html"><li>
+        Contact
+      </li>
+    </a>
+  </ul>
+</footer>
+
+</body>
+</html>

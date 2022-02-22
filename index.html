@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dragons</title>
+  <meta name="author" content="Matéo CONDAT">
+  <meta name="keywords" content="Dragons, Dessin animé, DreamWorks, MM01">
+  <meta name="description" content="Site réalisé sur le thème des dessins animés Dragons dans le cadre de l'UE MM01 à l'UTT">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Initialise le responsive des pages-->
+  <link rel="shortcut icon" type=image/ico href="favicon/icon.ico"> <!--Favicon de la page-->
+
+  <style>
+
+  #mydiv {
+    position: fixed;
+    z-index: 9;
+    background:linear-gradient(#77b96f,#419d6c);
+    text-align: center;
+    right:0;
+    left:0;
+    bottom:-655px;
+    height:700px;
+  }
+
+  #mydivheader {
+    padding: 10px;
+    z-index: 10;
+    background: linear-gradient(#555555,#333333);
+    color: #fff;
+    border-top:solid 2px black;
+  }
+
+  footer {
+    height:40px;
+  }
+  </style>
+
+</head>
+
+<body>
+
+<header>
+  
+  <br>
+  <!--Images du header-->
+  <img src="img/Dragonprincipal.png" alt="Beau dragon" title="Dragon" class=dragonhead2 position=absolute>
+  <a href="index.html"><img class=logo src="img/dragons.png" alt="Beau logo" title="Dragons"></a>
+
+  
+  <br><br>
+
+  <!--Menu de navigation-->
+  <nav class=topnav id="myTopnav">
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()" float=right><img src="img/burger.png" alt="Beau burger" title="menu burger" width=50%></a> <!--Menu burger apparaissant sur les versions tablette et mobile-->
+
+    <div class=menuresp>
+      <div class="dropdown">
+        <img src="img/Dragonprincipal.png" alt="Beau dragon" title="Dragon" class=dragonhead position=absolute>
+          <a href="javascript:void(0)" class="dropbtn">La Saga</a>
+          <div class="dropdown-content">
+            <a href="pages/origines.html">Les origines</a>
+            <a href="pages/timeline.html">Timeline</a>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">histoire des films</a>
+          <div class="dropdown-content">
+            <a href="pages/resume.html">Résumé</a>
+            <a href="pages/personnages.html">Personnages</a>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Contenu annexe</a>
+          <div class="dropdown-content">
+            <a href="pages/quizz.html">Quizz</a>
+            <a href="pages/galerie.html">Galerie</a>
+            <a href="pages/musiques.html">Musiques</a>
+          </div>
+      </div>
+
+      <div class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">A propos</a>
+          <div class="dropdown-content">
+            <a href="pages/commentaires.html">Commentaires</a>
+            <a href="pages/contact.html">Contact</a>
+          </div>
+      </div>
+    </div>
+    
+
+    </nav>
+
+    <!--Script utilisé pour le responsif du menu-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+      }
+    </script>
+
+</header>
+
+<section>
+
+  <div class='block debut'>
+    <h2 class="font"> <!--Titre de la page-->
+      Accueil
+    </h2><br>
+    <p>Bienvenu sur la page d'accueil de ce site sur le thème de la saga des films d'animation Dragons. Créée en 2010 par les réalisateurs Dean De Blois et Chris Sanders, cette saga iconique a réussi à s'encrer dans la culture des petits, comme des grands.</p><!--Texte d'accueil-->
+  </div>
+
+  <hr>
+
+  <div class='block parallaxe'>
+  </div>
+
+  <hr>
+
+  <div>
+    <div class='blockgauche'> <!--Image des personnages de la saga Dragons-->
+      <img src="img/dragoncover.jpg" alt="imageaccueil" title="dragonsaccueil" class="image imgaccueil" width=100%>
+    </div>
+    <div class='blockdroite'> <!--Prix remportés par le film Dragons-->
+      <br>
+    
+      <h2 class=font>Prix</h2>
+
+      <br>
+
+      <ul>
+        <li><p>Oscar 2011:</p></li>
+
+        <ul>
+          <li><p>Oscar de la meilleure musique: John Powell</p></li>
+
+          <li><p>Oscar du meilleur film d'animation: Dean DeBlois, Chris Sanders</p></li>
+        </ul>
+
+        <br>
+
+        <li><p>BAFTA Awards 2011:</p></li>
+
+        <ul>
+          <li><p>Meilleure musique: John Powell</p></li>
+
+          <li><p>Meilleur film d'animation : Dean DeBlois, Chris Sanders</p></li>
+        </ul>
+
+        <br>
+
+        <li><p>Golden Globes 2011:</p></li>
+
+        <ul>
+          <li><p>Meilleur film d'animation: Chris Sanders, Dean DeBlois</p></li>
+        </ul>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class='block fin'><center><h2 class=font>"Tu n'es rien sans ton dragon"</h2></center></div> <!--Phrase de fin de la page d'accueil-->
+
+</section>
+
+
+
+<div id="mydiv"> <!--Codepen utilisé remplaçant le footer sur la page d'accueil-->
+  <div id="mydivheader"><img src="img/deroulant.png" alt="déroulant" height=20px></div>
+  <div class="background">
+    <div class="toothless-wrap">
+    <div class="toothless">
+      <div class="head-wrap">
+        <div class="ears">
+          <div class="ears-dtl-2"></div>
+          <div class="ears-dtl-1">
+            <div class="spot-dtl left"></div>
+            <div class="spot-dtl right"></div>
+          </div>
+          <div class="ears-main">
+            <div class="spot-dtl left">
+              <div class="spot-dtl top"></div>
+              <div class="spot-dtl bottom"></div>
+            </div>
+            <div class="spot-dtl right">
+              <div class="spot-dtl top"></div>
+              <div class="spot-dtl bottom"></div>
+            </div>
+          </div>
+        </div>
+        <div class="head">
+          <div class="spots">
+            <div class="spot-dtl"></div>
+            <div class="spot-dtl scale"></div>
+          </div>
+        </div>
+        <div class="eyes">
+          <div class="eye left"><div class="eye-dtl"></div></div>
+          <div class="eye right"><div class="eye-dtl"></div></div>
+        </div>
+        <div class="nose">
+          <div class="spots"></div>
+        </div>
+      </div>
+      <div class="neck"></div>
+    </div>
+    </div>
+    <a class="author" href="https://codepen.io/khadkamhn" target="_blank">@khadkamhn</a>
+    </div>
+</div>
+
+
+<!--Script utilisé pour le Codepen-->
+<script>
+  //rendre l'élément div déplaçable:
+  dragElement(document.getElementById("mydiv"));
+  
+  function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    if (document.getElementById(elmnt.id + "header")) {
+      
+      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    } else {
+      
+      elmnt.onmousedown = dragMouseDown;
+    }
+  
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // donne la position Y du curseur:
+      pos4 = e.clientY;
+
+      document.onmouseup = closeDragElement;
+      // utilise une fonction à chaque fois que le curseur bouge
+      document.onmousemove = elementDrag;
+    }
+  
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calcule la nouvelle position du curseur
+  
+
+
+      pos2 = pos4 - e.clientY;
+      pos4 = e.clientY;
+
+      // limite les déplacements de la souris pour ne pas sortir l'élément div de l'écran
+      if (e.clientY>740) {
+        pos2=0;
+      }
+      if (e.clientY<300) {
+        pos2=0;
+      }
+
+      // initialise la nouvelle position du curseur
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+
+
+
+    }
+  
+    function closeDragElement() {
+      /* ne déplace plus lorsque le bouton de la souris est laché*/
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  }
+</script>
+
+<footer>
+</footer>
+
+</body>
+</html>
